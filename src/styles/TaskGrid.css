@@ -1,0 +1,40 @@
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.task-grid .task-card {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-grid .task-card .task-points {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.task-grid .task-card .task-frequency {
+    font-size: 1em;
+    color: #888;
+}
+
+.task-grid .task-card .task-complete {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-grid .task-card .task-complete:hover {
+    background-color: #45a049;
+}
